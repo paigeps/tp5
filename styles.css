@@ -28,3 +28,24 @@ li {
   font-weight: bold;
   color: OliveDrab;
 }
+
+@media (min-width: 576px) {
+  div {
+    display: block;
+    width: 100vw;
+    height: calc(100vh/3);
+}
+
+@media (min-width: 992px) {
+  div {
+    display: inline-block;
+    width: calc(100vw/3);
+    float: left;
+  }
+}
+
+@media (max-width: 575px) {
+  li {
+    font-size: small;
+  }
+}
